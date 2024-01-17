@@ -258,7 +258,7 @@ If you do not have existing collections or are not using SolrCloud, you can skip
 Updating cluster properties can be done with the Collections API xref:cluster-node-management.adoc#clusterprop[CLUSTERPROP command], as in this example (update the hostname and port as appropriate for your system):
 
 [source,terminal]
-$ http://localhost:8983/solr/admin/collections?action=CLUSTERPROP&name=urlScheme&val=https
+$ curl http://localhost:8983/solr/admin/collections?action=CLUSTERPROP&name=urlScheme&val=https
 
 This command only needs to be run on one node of the cluster, the change will apply to all nodes.
 
